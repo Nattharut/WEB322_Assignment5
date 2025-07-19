@@ -4,15 +4,10 @@
     {
       "src": "server.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["public/**"] }
+      "config": { "includeFiles": ["dist/**"] }
     }
   ],
   "routes": [
-    {
-      "src": "/css/(.*)",
-      "headers": { "cache-control": "max-age=31536000" },
-      "dest": "/public/css/$1"
-    },
     {
       "src": "/(.*)",
       "dest": "server.js"
