@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="/css/add.css"/>
+</head>
+
+<body>
+  
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/add.css">
+</head>
+
+<body>
+    <div class="w-full">
+
+        <!-- hero with background image -->
+        <div class="hero bg-base-200">
+            <div class="hero-content text-center">
+                <img
+                    src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=1350&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="max-w-sm rounded-lg shadow-2xl" />
+                <div class="max-w-md">
+                    <h1 class="text-4xl font-bold">Add a Location</h1>
+                    <p class="py-6">
+                        Add a location to remember.
+                    </p>
+                </div>
+            </div>
+        </div> <!-- end hero -->
+
+
+        <div class="container mx-auto max-w-sm mt-4">
+            <form class="px-8 pt-6 pb-8 flex flex-col"  method="POST" action="/memories/add">
+                <input type="text" placeholder="Enter location name" class="input input-bordered w-full max-w-xs mb-4" name="name">
+                <input type="text" placeholder="Enter location address"
+                    class="input input-bordered w-full max-w-xs mb-4" name="address">
+                <select class="select select-bordered w-full max-w-xs mb-4" name="selection">
+                    <option>Food</option>
+                    <option>Outdoors</option>
+                    <option>Events</option>
+                </select>
+                <input type="text" placeholder="Enter image url" class="input input-bordered w-full max-w-xs mb-4" name="image">
+                <textarea name="comments" class="textarea textarea-bordered mb-4"
+                    placeholder="What are your memories of this place?" ></textarea>
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+</body>
+
+</html>
