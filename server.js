@@ -20,11 +20,14 @@ const HTTP_PORT = process.env.PORT || 8080;
 
 const express = require("express");
 const app = express();
+
 app.use(express.static("public"));  
 app.set("view engine", "ejs");      //ejs
 app.use(express.urlencoded({ extended: true })); //forms
 require("dotenv").config()   
 
+app.set('views', __dirname + '/views');
+require('pg');
 
 // +++ Database connection code
 // +++ TODO: Remember to add your Neon.tech connection variables to the .env file!!
